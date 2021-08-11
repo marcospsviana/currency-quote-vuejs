@@ -3,6 +3,8 @@
 This is a mini project for currency quotes of the dollar, euro, and bitcoin for currency Brazilian. It's my first project made in Vuejs, they separate the templates of the scripts and styles, cool. I loved.
 The inputs get values dynamically, and the texts of the labels currency of Brazilian values too.
 
+![Image info](src/assets/page_preview.png)
+
 ## Project setup
 ```
 npm install
