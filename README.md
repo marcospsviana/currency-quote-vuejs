@@ -34,3 +34,32 @@ Header.vue
 
 ### app
 App.vue   
+
+
+
+## config heroku 
+
+### build packs
+
+```
+heroku buildpacks:set heroku/nodejs
+```
+### node
+*see https://devcenter.heroku.com/articles/nodejs-support*
+
+
+
+```
+heroku config:set USE_NPM_INSTALL=true
+```
+### node modules cache
+
+```
+heroku config:set NODE_MODULES_CACHE=false
+```
+
+### only installing dependencys
+
+```
+heroku config:set NPM_CONFIG_PRODUCTION=true YARN_PRODUCTION=true
+```
