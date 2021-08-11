@@ -1,0 +1,35 @@
+:root {
+ --color-links:#8a4646;
+ 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+html{
+    margin: 0;
+}
+header{
+    margin: 0;
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    transition: 0.3s opacity;
+}
+
+a:hover{
+    opacity: 0.8;
+}
+a:visited{
+    text-decoration: none;
+    
+}
+.container{
+    width: 90%;
+}

@@ -1,17 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div id="app">
+  <Header />
+  <CurrentQuote />
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import './styles/globals.css'
+// import CurrentQuote from '../current-quote/src/components/CurrentQuote.vue'
+import Header from './components/Header.vue'
+import CurrentQuote from './components/CurrentQuote.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    CurrentQuote
   }
-}
+};
+
 </script>
 
 <style>
@@ -22,5 +29,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  margin: 0;
 }
 </style>
