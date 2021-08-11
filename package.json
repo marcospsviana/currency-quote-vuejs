@@ -5,15 +5,20 @@
   "engines": {
     "node": "16.x"
   },
-
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "postinstall": "npm run build",
+    "start": "node server.js",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run dev"
   },
   "dependencies": {
+    "@vue/component-compiler-utils": "^3.2.2",
     "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "express": "^4.17.1",
+    "vue": "^2.6.11",
+    "vue-template-compiler": "^2.6.14"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
