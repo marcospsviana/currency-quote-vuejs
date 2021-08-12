@@ -57,9 +57,3 @@ heroku config:set USE_NPM_INSTALL=true
 ```
 heroku config:set NODE_MODULES_CACHE=false
 ```
-
-### only installing dependencys
-
-```
-heroku config:set NPM_CONFIG_PRODUCTION=false YARN_PRODUCTION=false
-```
