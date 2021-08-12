@@ -61,5 +61,5 @@ heroku config:set NODE_MODULES_CACHE=false
 ### only installing dependencys
 
 ```
-heroku config:set NPM_CONFIG_PRODUCTION=true YARN_PRODUCTION=true
+heroku config:set NPM_CONFIG_PRODUCTION=false YARN_PRODUCTION=false
 ```
