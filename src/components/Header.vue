@@ -4,7 +4,7 @@
         <nav class="container">
         <img src="../assets/cambio.svg" alt="logo"  height="2em" width="2em" id="logo"> 
        
-        <h4> <a href="#">Cotação Dólar </a>| <a href="#"> Euro </a>| <a href="#"> Bitcoin </a> </h4>
+        <h4> <a href="#">Cotação Dólar </a>| <a href="#"> Euro </a> </h4>
         </nav>
     </header>
 
