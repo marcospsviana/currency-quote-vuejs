@@ -56,7 +56,7 @@
     </div>
   </div>
   
-    <div class="cotacoes">
+    <!-- <div class="cotacoes">
       <label id="title"> BitCoin </label> 
       <input v-model="inputBTC" /><br />
 
@@ -77,9 +77,9 @@
             currency: "BRL",
           })
         }}</label>
-      </div>
+      </div> -->
    
-  </div>
+  <!-- </div> -->
   </div>
 </template>
 <script>
