@@ -22,7 +22,7 @@
       <br />
       <label class="money"
         >{{
-          (quote_value.USDBRL * inputValue).toLocaleString("pt-BR", {
+          (quote_value.USDBRL * inputValue || 0).toLocaleString("pt-BR", {
             style: "currency",
             currency: "BRL",
           })
@@ -47,7 +47,7 @@
       <br />
       <label id="money" class="money">
         {{
-          (quote_value.EURBRL * inputEUR).toLocaleString("pt-BR", {
+          (quote_value.EURBRL * inputEUR || 0).toLocaleString("pt-BR", {
             style: "currency",
             currency: "BRL",
           })
@@ -56,30 +56,7 @@
     </div>
   </div>
   
-    <!-- <div class="cotacoes">
-      <label id="title"> BitCoin </label> 
-      <input v-model="inputBTC" /><br />
-
-      <div v-if="isNaN(inputBTC)">
-        <br />
-        <label class="money">{{
-          parseFloat(quote_value.BTCBRL * 1000).toLocaleString("pt-BR", {
-            style: "currency",
-            currency: "BRL",
-          })
-        }}</label>
-      </div>
-      <div v-else>
-        <br />
-        <label id="money" class="money">{{
-          (quote_value.BTCBRL * 1000 * inputBTC).toLocaleString("pt-BR", {
-            style: "currency",
-            currency: "BRL",
-          })
-        }}</label>
-      </div> -->
-   
-  <!-- </div> -->
+    
   </div>
 </template>
 <script>
@@ -97,7 +74,7 @@ export default {
       quote_value: 0,
       inputValue: 1,
       inputEUR: 1,
-      inputBTC: 1,
+      inputBTC: 1
     };
   },
  
