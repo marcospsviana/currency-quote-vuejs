@@ -67,6 +67,7 @@ export default {
   mounted() {
     api.get().then((response) => {
       this.quote_value = response.data;
+      console.log(this.quote_value);
     });
   },
   data() {

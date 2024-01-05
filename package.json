@@ -1,52 +1,33 @@
 {
-  "name": "current-quote",
-  "version": "0.1.0",
-  "engines": {
-    "node": "16.x",
-    "npm": "7.x"
-  },
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "start": "node server.js"
-  },
   "dependencies": {
-    "axios": "^0.21.1",
-    "core-js": "^3.6.5",
-    "express": "^4.17.1",
-    "serve": "^12.0.0",
-    "serve-static": "^1.14.1",
-    "vue": "^3.0.0"
+    "@vue/cli-service": "^5.0.8",
+    "axios": "^1.6.4",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "vue": "^3.4.5",
+    "vue-cli": "^2.9.6",
+    "webpack": "^5.89.0"
   },
+  "scripts": {
+    "start": "node server.js",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "name": "currency-quote-vuejs",
+  "description": "This is a mini project for currency quotes of the dollar, euro, and bitcoin for currency Brazilian. It's my first project made in Vuejs, they separate the templates of the scripts and styles, cool. I loved. The inputs get values dynamically, and the texts of the labels currency of Brazilian values too.",
+  "version": "1.0.0",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/marcospsviana/currency-quote-vuejs.git"
+  },
+  "author": "marcospaulo.silvaviana@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcospsviana/currency-quote-vuejs/issues"
+  },
+  "homepage": "https://github.com/marcospsviana/currency-quote-vuejs#readme",
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+    "@vue/babel-preset-app": "^5.0.8"
+  }
 }
-
